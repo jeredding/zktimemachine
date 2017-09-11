@@ -29,7 +29,7 @@ repositories {
 
 // In this section you declare the dependencies for your production and test code
 dependencies {
-    compile 'org.apache.zookeeper:zookeeper:3.4.5'
+    compile 'org.apache.zookeeper:zookeeper:3.5.3-beta'
     compile 'org.scala-lang:scala-library:2.11.1'
     compile 'joda-time:joda-time:2.7'
     compile 'org.rogach:scallop_2.11:0.9.5'
@@ -52,7 +52,7 @@ task runGrep(type: JavaExec) {
 
 jar {
     manifest {
-        attributes 'Implementation-Title': 'ZooKeeper Time Machine',  
+        attributes 'Implementation-Title': 'ZooKeeper Time Machine',
                    'Implementation-Version': '1.0',
                    'Main-Class': 'org.apache.zookeeper.server.GrepOps'
     }
